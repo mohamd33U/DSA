@@ -17,7 +17,7 @@ def insert_end(head, new_data):
         head = new_node
     else:
         curr = head
-        while curr.next is not None:
+        while curr.next:
             curr = curr.next
 
         # Set the next of the last node to the new node

@@ -18,7 +18,7 @@ def insert_at_front(head, new_data):
     new_node.next = head
 
     # Change prev of head node to new node
-    if head is not None:
+    if head :
         head.prev = new_node
 
     # Return the new node as the head of the doubly linked list

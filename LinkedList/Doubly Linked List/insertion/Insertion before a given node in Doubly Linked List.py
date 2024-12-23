@@ -14,7 +14,7 @@ def insert_before(head, key, new_data):
     curr = head
 
     # Iterate over Linked List to find the key
-    while curr is not None:
+    while curr :
         if curr.data == key:
             break
         curr = curr.next
@@ -33,7 +33,7 @@ def insert_before(head, key, new_data):
     new_node.next = curr
 
     # Update next of given node's prev to new node
-    if curr.prev is not None:
+    if curr.prev :
         curr.prev.next = new_node
     else:
         # If the current node is the head, update the head

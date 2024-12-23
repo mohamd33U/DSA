@@ -11,7 +11,7 @@ def insert_after(head, key, new_data):
     curr = head
 
     # Iterate over Linked List to find the key
-    while curr is not None:
+    while curr:
         if curr.data == key:
             break
         curr = curr.next
